@@ -508,6 +508,8 @@ footer {
 .footer__link,
 .footer__contact {
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .footer__contact i {
@@ -576,6 +578,8 @@ footer {
 /* *************************RESPONSIVE************************ */
 
 @media screen and (max-width: 1199.98px) {
+
+    /* CAROUSEL */
     #carouselCyber .carousel-caption {
         top: 50%;
     }
@@ -597,6 +601,8 @@ footer {
 }
 
 @media screen and (max-width: 991.98px) {
+
+    /* HEADER */
     .navInstruction .navbar-brand p:first-of-type {
         font-size: 3vw;
     }
@@ -607,6 +613,8 @@ footer {
 }
 
 @media screen and (max-width: 767.98px) {
+
+    /* HEADER */
     #navbarInstruction .navbar-nav {
         background-color: #eee;
         text-align: center;
@@ -625,24 +633,45 @@ footer {
 }
 
 @media screen and (max-width: 575.98px) {
+    /* GLOBAL */
+    .heading p{
+        padding: 0 15px;
+    }
+
+    /* HEADER */
     .header__left a {
         display: block;
     }
+    /* FOOTER */
+    .footer__form button, .footer__form input{
+        padding: 10px;
+        border: 0;
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 530px) {
-    #carouselCyber{
+
+    /* CAROUSEL */
+    #carouselCyber {
         height: 250px;
     }
-    #carouselCyber .carousel-inner, #carouselCyber .carousel-item, #carouselCyber .carousel-item img{
+
+    #carouselCyber .carousel-inner,
+    #carouselCyber .carousel-item,
+    #carouselCyber .carousel-item img {
         height: 100%;
     }
-    #carouselCyber .carousel-item img{
+
+    #carouselCyber .carousel-item img {
         object-fit: cover;
     }
 }
 
 @media screen and (max-width: 320px) {
+
+    /* HEADER */
     .header__right {
         width: 35%;
         text-align: center;
@@ -654,6 +683,8 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* HEADER */
     #navbarInstruction .nav-item {
         margin: 0;
         padding: 0 2px;
@@ -662,5 +693,11 @@ footer {
     #navbarInstruction .nav-item .nav-link {
         font-size: 12px;
         padding: 5px;
+    }
+}
+
+@media screen and (min-width: 575.98px) and (max-width: 992px) {
+    .feedback__content .feedback__bottom {
+        width: 85%;
     }
 }
